@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playwrite+MX:wght@100..400&family=Playwrite+NG+Modern:wght@100..400&display=swap"
+        rel="stylesheet">
+    <title>ProtocolWhiz</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar">
+        <h2 class="navbar-logo"><a href="index.html">ProtocolWhiz</a></h2>
+        <div class="navbar-menu">
+            <a href="index.html">Home</a>
+            <a href="about_us.html">Our Mission</a>
+            <a href="FAQ.html">FAQ</a>
+            <a href="thanks.html">Contact Us</a>
+        </div>
+        <div class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+    <div class="start-screen">
+        <img src="images/Logo.jpg" alt="Logo" class="logo">
+        <h1 class="index-h1"></h1>
+        <h2 class="slogan-h2">Interactive learning, Local EMS protocol mastery!</h2>
+        <label class="drop-down-menu" for="county">Choose a County:</label>
+        <select id="county" name="county">
+            <option value="default" selected disabled>Select County</option>
+            <option value="county_a">Contra Costa County</option>
+            <option value="county_b" disabled>Coming Soon: Alameda County</option>
+            <option value="county_c" disabled>Coming Soon: Fresno County</option>
+            <option value="county_d" disabled>Coming Soon: Kern County</option>
+            <option value="county_e" disabled>Coming Soon: Los Angeles County</option>
+            <option value="county_f" disabled>Coming Soon: Marin County</option>
+            <option value="county_g" disabled>Coming Soon: Merced County</option>
+            <option value="county_h" disabled>Coming Soon: Monterey County</option>
+            <option value="county_i" disabled>Coming Soon: Orange County</option>
+            <option value="county_j" disabled>Coming Soon: Riverside County</option>
+            <option value="county_k" disabled>Coming Soon: Sacramento County</option>
+            <option value="county_l" disabled>Coming Soon: San Bernadino County</option>
+            <option value="county_m" disabled>Coming Soon: San Diego County</option>
+            <option value="county_n" disabled>Coming Soon: San Francisco County</option>
+            <option value="county_o" disabled>Coming Soon: San Joaquin County</option>
+            <option value="county_p" disabled>Coming Soon: San Luis Obispo County</option>
+            <option value="county_q" disabled>Coming Soon: San Mateo County</option>
+            <option value="county_r" disabled>Coming Soon: Santa Barbara County</option>
+            <option value="county_s" disabled>Coming Soon: Santa Clara County</option>
+            <option value="county_t" disabled>Coming Soon: Santa Cruz County</option>
+            <option value="county_u" disabled>Coming Soon: Solano County</option>
+            <option value="county_v" disabled>Coming Soon: Sonoma County</option>
+            <option value="county_x" disabled>Coming Soon: Stanislaus County</option>
+            <option value="county_y" disabled>Coming Soon: Tulare County</option>
+            <option value="county_z" disabled>Coming Soon: Ventura County</option>
+            <!-- Add more counties as needed -->
+        </select>
+        <button id="start-button">Start Quiz</button>
+    </div>
+
+    <div id="display-container" class="hide">
+        <h2 class="title-quiz-header">Contra Costa County</h2>
+        <div class="header">
+            <div class="number-of-count">
+                <span class="number-of-question">Question 1</span>
+            </div>
+        </div>
+        <div id="container">
+            <!-- Quiz questions will be displayed here dynamically -->
+        </div>
+        <button id="next-button">Next</button>
+        <button id="view-protocol-btn" class="hide">View Protocol</button>
+    </div>
+
+    <div class="score-container hide">
+        <div id="user-score">Demo Score</div>
+        <button id="restart">Restart</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
